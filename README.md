@@ -89,6 +89,17 @@ J'ai ajouter les prgrammes en cours via les service offert par :
 
 J'ai désormais les programmes de chaque chaines (disponilbes sur la freebox) en temps réel...
 
+## Quelques liens interessants      
+> https://github.com/Aymkdn/assistant-freebox-cloud/wiki/Player-API#lancer-un-m%C3%A9dia--une-application
+> https://dev.freebox.fr/sdk/os/
+> http://mafreebox.freebox.fr/api/v8/player/1/api/v6/status/ (on doit petre connecté préalablement sur http://mafreebox.freebox.fr)
+> http://mafreebox.freebox.fr/freeboxtv/playlist.m3u (url dispo du flux vidéo au format rtsp)
+> http://mafreebox.freebox.fr/api_version
+> http://mafreebox.freebox.fr/api/v8/tv/bouquets/
+> http://mafreebox.freebox.fr/api/v3/tv/bouquets/582/channels
+> http://mafreebox.freebox.fr/api/v6/tv/channels/
+> https://github.com/JRBANCEL/FreeboxLogin (compliqué... si qqun peut m'aider, je serai ravi de récupérer le statut de la freebox : allumée/éteinte, chaine en cours...)
+
 ## La suite...
 
 J'espère que mon code vous aidera à avancer sur votre projet !
