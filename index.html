@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" lang="fr" content="Freebox Télécommande" />
+    <link rel="stylesheet" href="style.css">
+    <title>📺FbTv</title>
+
+</head>
+<body>
+
+<div id="divMain">
+    <div id="divHeader" class="classHoriz">
+        <button id="btnFullScreen" class="classBouton">Full Size</button>
+    </div>
+    <div id="divNumero" class="classGrid10">
+    </div>
+    <div id="divCross" class="classGrid">
+    </div>
+    <div id="divHisto" class="classCarousel">
+    </div>
+    <div id="divCarousel" class="classCarousel">
+    </div>
+    <div id="programsContainer" class="classCarousel">
+    </div>
+    <div id="programsListe" class="classHoriz">
+    </div>
+    <div id="programsNow" class="classHoriz">
+        <button id="btnProgramsNow">🔍En ce moment</button>
+        <div id="divProgramsNowFilter" class="classGrid3"></div>
+        <div id="divProgramsNow" class="classGrid3"></div>
+    </div>
+    
+    <div id="divSpecial" class="classHoriz">
+    </div>
+    <div id="divMagneto" class="classHoriz">
+    </div>
+    <div id="divSources" class="classHoriz">
+    </div>
+    <div id="divServices" class="classHoriz">
+    </div>
+    <div id="divFilters" class="classHoriz">
+    </div>
+    <div id="divChaines" class="classHoriz">
+    </div>
+
+
+    <div id="divInputs" class="classHoriz">
+        <form id="formCmdSeq">
+            <label for="inputCmdSeq">Clavier:</label>
+            <input type="text" id="inputCmdSeq" name="inputCmdSeq" size="5"/>
+            <button type="submit">Envoyer</button>
+        </form>
+        <form>
+            <button id="btnLeft">⬅</button>
+            <button id="btnBack">Backspace</button>
+            <button id="btnDelete">Suppr.</button>
+            <button id="btnSpace">Espace</button>
+            <button id="btnRight">➡</button>
+        </form>
+        <form id="formCmdSimple">
+            <label for="inputCmdSimple">Test Commandes:</label>
+            <input type="text" id="inputCmdSimple" name="inputCmdSimple" size="5"/>
+            <button type="submit">Envoyer commande</button>
+        </form>        
+    </div>
+
+
+
+
+    <div id="divForm">
+
+        <label for="name">IP:</label>
+        <input type="text" id="ip" name="ip" required minlength="4" maxlength="20" size="10" value="192.168.0.44"/>
+        <br>
+        <label for="name">Code téléc:</label>
+        <input type="text" id="code" name="code" required minlength="4" maxlength="20" size="10" value="53888540"/>
+        <br>
+        Opacity : <input type="range" id="rngOpacity" min=".2" max="1" step=".1" value=".8">
+
+    </div>
+
+    <button id="purgeButton">Purger les 🍪 et recharger</button>
+
+    <details  class="classHoriz">
+        <summary>Dev Notes</summary>
+        http://192.168.0.44/pub/remote_control?code=53888540&key=mute
+
+        https://github.com/Aymkdn/assistant-freebox-cloud/wiki/Player-API#lancer-un-m%C3%A9dia--une-application
+
+        https://dev.freebox.fr/sdk/os/
+
+        http://mafreebox.freebox.fr/api/v8/player/1/api/v6/status/
+
+        http://mafreebox.freebox.fr/freeboxtv/playlist.m3u
+
+        http://mafreebox.freebox.fr/api_version
+        http://mafreebox.freebox.fr/api/v8/tv/bouquets/
+        http://mafreebox.freebox.fr/api/v3/tv/bouquets/582/channels
+        http://mafreebox.freebox.fr/api/v6/tv/channels/
+
+        https://github.com/JRBANCEL/FreeboxLogin
+    </details>
+
+
+</div>
+
+<div id="progDetail">  
+</div>
+
+<div id="progNow">
+</div>
+
+<div id="snackbar">Some text some message..</div>
+
+<script src="script.js"></script>
+</body>
+</html>
